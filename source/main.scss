@@ -1,0 +1,80 @@
+@use 'config/reset.scss';
+@use 'config/colors.scss';
+@use 'sessions/products.scss';
+@use 'config/variables.scss';
+
+body {
+  background-color: colors.$firstColor;  
+}
+
+header {
+
+  background-color: colors.$secondColor;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  li {
+    list-style: none;
+  }
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu li {
+    font-weight: bold;
+    margin-left: 1.5rem;
+  }
+
+  .menu li a {
+    color: colors.$thirdColor;
+    text-decoration: none;
+  }
+
+}
+
+@media screen and (max-width: variables.$mobile) {
+
+  header {
+    padding: 1rem;
+  }
+
+  section {
+    .products {
+      display: block;
+    }
+
+    .product-item  {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: variables.$tablet) {
+
+  header {
+    padding: 1.5rem;
+  }
+
+  section {
+    .container {
+      max-width: 80%;
+    }
+
+    .products {
+      grid-template-columns: repeat(2, 48.5%);
+      column-gap: 3%;
+    }
+  }
+}
