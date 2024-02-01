@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.products {
+  max-width: 640px;
+  width: 100%;
+  margin: 3.5rem auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 1%;
+}
+.products .product__image {
+  width: 100%;
+}
+.products .product__name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.products .product__description {
+  color: gray;
+  text-align: center;
+}
+.products .product__featured {
+  border: 2px solid gold;
+  padding: 0.5rem;
+  background-color: #ffff42;
+}
+
+/*# sourceMappingURL=main.css.map */
