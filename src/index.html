@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="@@ADDRESS_CSS">
+</head>
+<body>
+  <main>
+    <h1>Drawer</h1>
+    <form id="formDrawer">
+      <div>
+        <label for="maximum-number">Maximum number</label>
+        <input type="number" id="maximumNumber" required min="2" max="1000" value="2" step="1"/>
+      </div>
+      <button type="submit">Draw number</button>
+    </form>
+  </main>
+  <div class="result">
+    The number drawn was<span id="resultValue"></span>
+  </div>  
+  <script src="@@ADDRESS_JS"></script>
+</body>
+</html>
